@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript timers</h1>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+
+    <script>
+        //setTimeout() - execute code after a delay
+        //setTimeinterval() - execute  code at regular intervals
+
+        function myCode(){
+            console.log("Hey there!!");
+            console.log("I am using whatsapp");
+        }
+        let timer;
+        function start(){
+            console.log("Here we go!!!");
+            //we have start here
+           // setTimeout(myCode, 5000);
+
+            timer = setInterval(myCode, 2000);
+
+        }
+        function stop(){
+            clearInterval(timer);
+
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

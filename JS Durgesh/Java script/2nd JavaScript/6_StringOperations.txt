@@ -1,0 +1,5 @@
+1.How to check equality of string 
+2. comparing two string
+3. Replace certain word with another
+4. accessing charracter -string [0]
+5. copnbverting string to array using split functions

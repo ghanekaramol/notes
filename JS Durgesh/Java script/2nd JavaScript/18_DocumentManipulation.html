@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addNode()">Add note</button>
+    <div id="main">
+        <h1 id="title">Hello world!</h1>
+        <p id="hint"> This is a sample paragraph</p>
+    </div>
+    
+    
+
+    <script>
+      console.log("hi");
+      function addNode(){
+        console.log("addNode");
+        //creating node
+
+        let divElement = document.createElement("div");
+        console.log(divElement);
+
+        //create a textnote
+        let textElement = document.createTextNode("Wow this is magic!!");
+        let textElement1 = document.createTextNode("Wow this is going to be fun");
+
+        //adding textNode into div element
+        divElement.appendChild(textElement);
+        divElement.appendChild(textElement1);
+
+        //add this div into html file's div
+        let mainElement = document.getElementById("main");
+
+        mainElement.appendChild(divElement);
+
+        //print before all elements in div
+        let titleElement = document.getElementById("title");
+        //mainElement.insertBefore(divElement, titleElement);
+
+        //line 42 and line 38 can be display one at a time 
+
+        titleElement.innerHTML = "Hey There";
+
+        mainElement.removeChild(titleElement);
+
+      }
+      
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selectors</title>
+    <!-- you can write js cide here-->
+</head>
+<body>
+    <h1>DOM selectors</h1>
+    <h2 id ="banner"> LearCodeWith durgesh</h2>
+    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1>
+    <h1 class="myclass">hello world</h1>
+    <h3 class="myHobby">My hobby</h3>
+
+    <script>
+        console.log("Inside the body");
+
+        //1 . this SELECTOR used to select the whole body of html
+        let ht = document.documentElement;
+        console.log(ht);
+
+        console.log("-----------------------------------");
+
+        //2 . this is used to select the body tag
+        let bo = document.body;
+        console.log(bo);
+
+        console.log("------------------------------------");
+        
+        //3 . this is used to select the head
+        let he = document.head;
+        console.log(he);
+
+        let ti = document.title;
+        console.log(ti);
+
+        //4 . select element by id
+        //getElementById return a single
+        let h2 = document.getElementById("banner");
+        console.log(h2);
+
+        //for changing the text in h2 head
+        h2.innerHTML = "changed text";
+
+        h2.style.color="yellow";
+        h2.style.backgroundColor="green";
+
+        //5 . selecting element by classname
+        let e1 = document.getElementsByClassName("myclass");
+
+        for (let element  of e1 ){
+            console.log(element);
+            element.style.color="brown";
+            element.backgroundColor="pink";
+        }
+
+        //6 . selecting element with the help of css selector
+        //querySelector for sinlge element
+        //querySelectorAll for list of element
+        let els = document.querySelectorAll("myHobby");
+
+        for (let e of els){
+            console.log(e);
+            e.style.color="blue";
+        }
+
+    </script>
+</body>
+</html>

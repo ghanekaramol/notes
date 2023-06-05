@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strign in JS</h1>
+    <script>
+        
+        console.log("Going to practice");
+        //First way of creating string
+        let name="Amol";
+        console.log(typeof name);
+
+        //second way of creating string
+        let secondname= new String ("Amol");
+        console.log(typeof secondname);
+
+        //there are also 3 types of creating String in first way
+        let name1="Dhoni";
+        let name2='Dhoni';
+        let name3=`My fav
+                player is 
+                Dhoni`;
+        console.log(name1);
+        console.log(name2);
+        console.log(name3);
+
+        //INTERPOLATION
+        let a=12;
+        let b=125;
+        let c=a+b;
+
+        //output
+        //sum of 12 and 125 is 12+125
+        //concadenation
+        console.log("sum of "+a+" and " + b + " is "+c);
+        //Main work of interpolation is
+        console.log(`sum of ${a} and ${b} is ${c}`);
+
+    </script>
+</body>
+</html>

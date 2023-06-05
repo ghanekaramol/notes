@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title"> We are learning javascript</h1>
+        <p id="content">
+            <span>javascript is very useful language for frontend and backend as well</span>
+        </p>
+        <h2>Subscribe for more videos</h2>  
+    </div>
+    <button onclick="btnClick()">Click me</button>
+    <script>
+        function btnClick(){
+            let containerOb = document.getElementById("container");
+        //console.log(containerOb);
+
+        //----------------------fetch the first child
+        console.log(containerOb.firstElementChild.nodeName);
+        let firstChild = containerOb.firstElementChild;
+        firstChild.style.color="white";
+        firstChild.style.backgroundColor="black";
+        firstChild.innerHTML="Hi going to change";
+
+
+        //----------------------fetch last child
+        let lastChild=containerOb.lastElementChild;
+        lastChild.style.color="white";
+        lastChild.style.backgroundColor="red";
+
+
+        //-------------------get Nodes
+        let nodes = containerOb.children;
+        for(let n of nodes){
+            console.log(n.nodeName);
+        }
+
+        //---------------------paraent node
+        let parentNode = containerOb.parentNode;
+        console.log(parentNode.nodeName);
+
+        //---------------------previous sibling and next sibling
+        let titleOb = document.getElementById("title");
+        let nextS = titleOb.nextElementSibling;
+        console.log(nextS.nodeName);
+
+    }
+
+
+
+
+        
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

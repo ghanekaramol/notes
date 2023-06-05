@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>five imp string operations</title>
+</head>
+<body>
+    <h1>five imp string operations</h1>
+    <script>
+        //1.How to check equality of string 
+        //Thats the primitive way of creating string
+        let str1 = "javascript";
+        let str2 = "javascript";
+        console.log(str1 == str2);
+        if(str1==str2){
+            console.log("both strings are rqual");
+        }
+
+        //thats the object way of creating string
+        let str3= new String ("javascript");
+        let str4= new String ("javascript");
+        console.log(str3==str4);
+        //output becomes false because address is different in this way
+
+        //2. comparing two string
+        let s1="A";
+        let s2="B";
+        let result=s1.localeCompare(s2);
+        console.log(result);
+        //exact matching : 
+        //s1<s2 : -1
+        //s1>s2 : +1
+        
+        //A-65 Z-90
+        //a-98 z-122
+        //for 0 it is 48
+
+        //3. Replace certain word with another
+        let oldString= "I hate javascript";
+        let newString = oldString.replace("hate" , "love");
+        console.log(newString);
+        //ouput : I love javascript
+        console.log(oldString);
+
+        //4. accessing charracter -string [0]
+        console.log(oldString.charAt(2));
+        console.log(oldString[2]);
+
+        //5. converting string to array using split functions
+        let as= oldString.split("");
+        console.log(as);
+    </script>
+</body>
+</html>

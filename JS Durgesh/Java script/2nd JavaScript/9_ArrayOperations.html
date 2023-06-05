@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+    <h1>Java Script Common Array operations performed</h1>
+    <script>
+
+        //creation of array
+        let names=["John", "Amir", "Hritik", "Sonakshi"];
+        console.log(names);
+        console.log(names.length);
+
+        //array access using index
+        console.log(names[0]);
+        console.log(names[2]);
+
+        //forEach over String array
+        names.forEach(function(item, index){
+            //this is body function
+            console.log(index, " => ", item);
+        });
+
+        //foreach over nums array
+        let nums=[45, 455, 45, 78 ,63];
+        let sum=0;
+        nums.forEach(function(it, i){
+
+            sum= sum + it;
+        });
+
+        console.log("sum is:" , sum);
+
+        //adding elements at last
+        names.push("Ram");
+        console.log(names);
+        names.push("Krishna");
+        console.log(names);
+
+        //remove elements from last
+        names.pop();
+        console.log(names);
+        //or
+        let r = names.pop();
+        console.log(names);
+        //if you want to display the removed name  
+        console.log(names.pop());
+
+        //remove elements from beginning
+        names.shift();
+        console.log(names);
+        //if you want to display the removed name 
+        console.log(names.shift());
+
+        names.push("Peter");
+        console.log(names);
+
+        //add element from beginning
+        names.unshift("Rudra");
+        console.log(names);
+
+        //remove array from any position
+        //using splice
+        //splice(position, numn of items)
+        console.log(names.splice(1, 1));
+        console.log(names);
+
+        //copy and array
+        //slice
+        let copy = names.slice();
+        //shallow copy
+        console.log(copy);
+        console.log(names);
+
+     
+
+
+
+
+
+    </script>
+</body>
+</html>

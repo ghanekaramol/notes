@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For in and For of loop</h1>
+    <script>
+
+        //for in loop
+        console.log("for in loop");
+
+        let st1 = {
+            name: "Amol",
+            phone:898595,
+            address:"hjabc",
+        }
+        console.log(st1);
+
+        for(let k in st1){
+            console.log(`${k} => ${st1[k]}`);
+        }
+
+        let ar = ["amol", "rahul", "ramraj"];
+
+        for (let i in ar){
+            console.log(ar[i]);
+        }
+
+        //for of loop
+
+        let ary = ["amol", "rahul", "ramraj"];
+
+        for(let j of ary){
+            console.log(j);
+        }
+
+
+        for(let j in ary){
+            console.log(j);
+        }
+
+//for in loop reflect the key(index) and for of loop reflects value
+
+
+    </script>
+</body>
+</html>

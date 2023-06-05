@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions and Arrow Functions</h1>
+    <script>
+        //creation of function
+        function pappu(){
+            //here we write the task 
+            console.log("Hello");
+            console.log("Hows u??");
+            console.log("How u doin??");
+
+        }
+
+        //creation of another fun
+        function doSum(a, b){
+            let c = a + b;
+            return c;
+
+        }
+
+        console.log("First line");
+        console.log("second line");
+        pappu();
+
+        //use of doSum fun
+        console.log("Sum is :",doSum(56,646));
+
+        //creation of new fun
+        //That is Arrow function
+        //Its a trending fun type now-a-days
+        const toCelsius = (fahrenheit) => {
+            let result = (5/9)*(fahrenheit-32);
+            return result;
+        }
+
+        console.log(toCelsius(120));
+
+
+    </script>
+</body>
+</html>

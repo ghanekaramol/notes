@@ -1,0 +1,134 @@
+<html>
+
+<title>Form and selector</title>
+<head>
+    <h1>Selectors</h1>
+
+    <style>
+        
+        .heading{
+            font-size: 50px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        table{
+            text-align: center;
+        }
+        body{
+
+            background-color: #936c6c;
+        }
+
+        li{
+            font-size: 30px;
+            color: black;
+        }
+
+        .selector{
+            font-size: 40px;
+            color: blue;   
+        }
+        #idSelector{
+            font-size: 60px;
+            color: greenyellow;
+        }
+        #register-form{
+            margin: auto;
+        }
+        #register-form tr td,input,select,textarea{
+            font-size: 30px;
+        }
+        #register-form input,select,textarea{
+            width: 100%;
+        }
+        #register-form{
+            border: 10px solid black;
+            padding: 10px;
+            background-color: grey;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 class="heading"><i>Form for learning</i></h1>
+    <form action="register.jsp" method="post">
+
+        <table id="register-form">
+            <tr>
+                <td>
+                    Enter username : 
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter here" value="Amol" name="user_name" > 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter password :
+                </td>
+                <td>
+                    <input type="password" placeholder="Enter password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter DOB :
+                </td>
+                <td>
+                    <input type="date" placeholder="Enter DOB">
+                </td>
+            </tr>
+            <tr>
+                <td>Select gender:</td>
+                <td>Male<input type="radio" name="gender">  </td>
+                <td>Female<input type="radio" name="gender">  </td>
+            </tr>
+            <tr>
+                <td>Select Course :</td>
+                <td>
+                    <select name="course" id="" size="2" multiple>
+                        <option value="java">Java programming</option>
+                        <option value="python">Python programming</option>
+                        <option value="Android">Android programming</option>
+                        <option value="PHP">PHP programming</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter address :</td>
+                <td><textarea placeholder="Enter address" style="width: 200px; height: 200px;"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <input type="checkbox">
+                </td>
+                <td>
+                    Accept all terms and conditions.
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                <input type="submit">
+                <input type="reset"></td>
+            </tr>
+           
+        </table>
+    </form>
+    <hr>
+
+    <ul>
+        <li>Tag selector</li>
+        <li>Tag selector</li>
+        <li>Tag selector</li>
+        <li class="selector">Class selector</li>
+        <li class="selector">Class selector</li>
+        <li class="selector">Class selector</li>
+        <li id="idSelector">Id selector</li>
+
+    </ul>
+</body>
+
+
+</html>

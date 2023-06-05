@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type conversion in JS</h1>
+    <script>
+        let a = 12;
+        console.log(typeof a);
+
+        //1.String conversion
+        let as = String (a);
+        console.log(typeof as);
+        console.log(as);
+
+        console.log(as.length);
+        //String conversion with the help of to string method
+        console.log(a.toString());
+        console.log(String(false));
+
+        //2.Numeric conversion
+        let value = "2566";
+        console.log(value+5);
+        
+        let value1=Number(2566);
+        console.log(value1+5);
+
+        
+        let f1= "65156.15651";
+        let f2= Number(65156.15651);
+        console.log(typeof f2);
+        console.log(f2);
+
+        //Number conversion using parseInt and parseFloat
+        let pint = parseInt(value);
+        console.log(pint+5);
+
+        let pfloat= parseFloat(f1);
+        console.log(pfloat);
+        /*
+        undefined => NaN
+        null => 0
+        true => 1
+        false=> 0
+        */
+        console.log(Number(undefined));
+        console.log(Number(null));
+        console.log(Number(true));
+        console.log(Number(false));
+        
+        //3. Boolean Conversion
+        let ex = "false";
+        console.log(typeof ex);
+
+        console.log(Boolean(ex));
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

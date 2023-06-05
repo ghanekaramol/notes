@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String imp functions</h1>
+    <script>
+        let s = "I love javascript";
+        console.log(s);
+        //length - num of characters
+        //length is not a function
+        let len = s.length;
+        console.log("length",len);
+        
+        //1. Concat
+        let s1="and java";
+        //console.log(s+" "+s1);
+        let ans = s.concat(" ",s1);
+        console.log(ans);
+
+        //2.charAt(index)
+        //we can find the char by index 
+        let index = s.charAt(3);
+        console.log(index);
+
+        //3.indexOf
+        //We can find the index by char
+        let index1 = s.indexOf("r");
+        console.log(index1);
+
+        //4. lastIndexOf
+        let index2 = s.lastIndexOf("a");
+        console.log(index2);
+
+        //5. toUpperCase
+        console.log(s.toUpperCase());
+
+        //6.toLowerCase
+        console.log(s.toLowerCase());
+
+        //7. substring (start, end)
+        //end is not included
+        let sub = s.substring(4,5);
+        console.log(sub);
+
+        //8. Start with  and shows the boolean value
+        console.log(s.startsWith("I love java"));
+
+        //9. End with and it is boolena value
+        console.log(s.endsWith("script"));
+
+        //10. split
+        let sp= s.split(" ");
+        console.log(sp);
+        console.log(sp[0]);
+        console.log(sp[1]);
+        console.log(sp[2]);
+
+        //11. trim
+        s2= "       My content ";
+        let s3= s2.trim();
+        console.log(s2);
+        console.log(s3);
+    </script>
+</body>
+</html>

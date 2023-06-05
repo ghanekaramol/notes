@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+
+    <h1>Object in javascript</h1>
+    <script>
+        let ob = {
+            name:'Amol',
+            age: 27,
+            address:'India',
+            phone:'6546',
+            "last name": "ghanekar",
+            display:function(){
+                console.log("display properties.....");
+                console.log(this.name);
+                console.log(this.address);
+                console.log(this.phone);
+
+            }
+        }
+        console.log(ob);
+        console.log(typeof ob);
+
+        //accessing the properties of the object
+        console.log(ob.name);
+        console.log(ob.address);
+        //console.log(ob.last name);
+
+        //accessing property in different way
+        console.log(ob["name"]);
+        console.log(ob["address"]);
+        console.log(ob["age"]);
+        console.log(ob["last name"]);
+
+        ob.display();
+
+        //using for in loop
+
+        for(let key in ob){
+            console.log(key + " " + ob[key]);
+        }
+
+        //changing values of properties
+        ob.name="Rajani";
+        console.log(ob.name);
+
+        //dynamic proprty adding
+        ob['email'] = "amol@gmail.com"
+
+        console.log(ob.email);
+
+        //deleting property
+
+        delete ob.email;
+        console.log(ob);
+
+
+
+
+
+    </script>
+</body>
+</html>
